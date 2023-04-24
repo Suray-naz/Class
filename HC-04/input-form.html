@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUTS-FORM ELEMENTS</title>
+    <style>
+        table{
+            background-color: rgb(187, 180, 180); margin:0 auto; }
+            .formbaslik{
+                background-color: lightpink;
+            }
+       textarea{
+        resize: none;
+       }
+    </style>
+</head>
+<body>
+    <table border="1" >
+        <tr class="formbaslik">
+            <td><img src="./avatar-women.png" alt="" width="100"></td>
+            <td>PERSONEL TANIMA FORMU</td>
+        </tr>
+        <tr>
+            <td colspan="2" >
+                <form action="result.html">
+                <div>
+                    <label for="ad">Adınız:</label> <br>
+                    <input type="text" id="ad" name="AD"
+                </div>
+                <div>
+                    <label for="soyad">Soyad:</label> <br>
+                    <input type="text" id="soyad" name="SOYAD"            
+                </div>
+                <div>
+                    <label for="yas">Yaşınız:</label> <br>
+                    <input type="number" id="yas" name="YAS"
+                </div>
+                <div>
+                    <label for="sifre">Şifreniz:</label> <br>
+                    <input type="password" id="sifre" name="SİFRE" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label> <br>
+                    <input type="email" id="email" name="EMAİL"
+                </div>
+                <div>
+                    <label for="tel">Telefon Numarası:</label> <br>
+                    <input type="tel" id="tel" name="TELEFON"
+                    pattern="[0-9]{3}[0-9]{3}-[0-9]{2}"
+                    placeholder="000-000-000"/>
+                </div> <br>
+                <div>
+                    <label for="dogum">Doğum Tarihiniz</label> <br>
+                    <input type="date" id="dogum" name="DOĞUM TARİHİ" value="2023-04-20">
+                </div> <br>
+                <!-- radio da name bilgisi ile bu radio butonun ne için olduğu yazılıdır,name biligisi hepsinde aynı olmalıdır. value bilgiside ne şekilde onu kaydeder 
+          örneğin cinsiyet:erkek -->
+                <div>
+                     <label for="cinsiyet">Cinsiyet:</label> <br>
+                     <input type="radio" name="cinsiyet" id="cinsiyet">
+                     <label for="kadın">Kadın</label> <br>
+
+                     <input type="radio" name="cinsiyet" id="cinsiyet">
+                     <label for="cinsiyet">Erkek</label>
+                </div> <br>
+                <div>
+                    <label for="">Müsait Olduğunuz Günler:</label> <br>
+                    <input type="checkbox" name="Gün" id="cumertesi">
+                    <label for="cumertesi">Cumartesi</label>
+
+                    <input type="checkbox" name="Gün" id="pazar">
+                    <label for="pazar">Pazar</label>
+                </div> <br>
+                <div>
+                    <label for="renk">En Sevdiğiniz Renk:</label>
+                    <input type="color" name="RENK" id="renk" value="#235367">
+                </div> <br>
+                <div>
+                    <label for="fotograf">Fotoğraf Ekleyin:</label>
+                    <input type="file" name="FOTOĞRAF" id="fotograf">
+                </div> <br>
+                <div>
+                    <label for="hobiler">Hobileriniz Nelerdir?</label>
+                    <select name="Hobi" id="hobiler">
+                        <option value="müzik">Müzik</option>
+                        <option value="kitap">Kitap</option>
+                        <option value="dans">Dans</option>
+                    </select>
+                </div> <br>
+                <div>
+                    <label for="spor">İlgilendiğiniz Spor Dalları:</label>
+                    <select name="Spor" id="spor">
+                        <optgroup label="Su Sporu">
+                            <option value="yüzme">Yüzme</option>
+                            <option value="su topu">Su Topu</option>
+                            <option value="dalıs">Dalış</option>
+                        </optgroup>
+
+                        <optgroup label="Dövüş Sporları"> </optgroup>
+                        <option value="karate">Karate</option>
+                        <option value="judo">Judo</option>
+                    </select>
+                </div> <br>
+                <div>
+                    <!-- (style da) textarea{resize: none;}-->
+                    <label for="yorum">Yorum:</label> <br>
+                    <textarea name="" id="" cols="50" rows="5"></textarea>
+                </div> <br>
+                <div>
+                    <label for="ulke">Görmek istediğiniz ülke?</label> <br>
+                    <input type="text" list="Gormekistenilenulke">
+                    <datalist id="Gormekistenilenulke" name="ULKE">
+                        <option value="Almanya"></option>
+                        <option value="Amerika"></option>
+                        <option value="Hollanda"></option>
+                    </datalist>
+                </div> <br>
+                <div>
+                    <fieldset>
+                        <legend>Kişisel Bilgiler</legend>
+                        <label for="kAdi">Kullanıcı Adı:</label>
+                        <input type="text" name="Kullanıcı" id="kAdi"> <br> <br>
+                        <label for="ksifre">Şifre</label>
+                        <input type="text" name="Sifre" id="ksifre">
+                    </fieldset>
+                </div> <br>
+                <input type="submit" value="KAYDET">
+                <input type="reset" value="TEMİZLE">
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

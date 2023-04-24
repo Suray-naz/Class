@@ -1,0 +1,25 @@
+*{
+    /* border: 1px solid red; */
+    /* background-color: chocolate; */}
+body{
+    /* background-color: aqua; */
+}
+
+h1{
+    color: rgb(167, 220, 20);
+}
+
+h1:hover{
+    color: blue;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+li{
+    list-style: circle;
+    color: rgb(255, 0, 234);
+}
+
+li:hover{
+        color:black
+    }

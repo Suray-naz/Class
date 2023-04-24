@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+
+    <div style="border: 1px solid;">
+        <br>
+    <form action="result.html" method="get">
+<div>
+    <!-- Label daki for ile input id birbiriyle aynı olursa bağlantı sağlamış olur. -->
+    <label for="kullaniciadi">KULLANICI ADI:</label>
+    <input type="text" id="kullaniciadi"
+    name="kullaniciadi" placeholder="kullanici adi girin"
+</div> 
+<br> <br>
+<div>
+<label for="sifre">ŞİFRE:</label>
+<input type="password" name="sifre" id="sifre" placeholder="sifre girin">
+</div>
+<br>
+<div>
+    <label for="securitycode">GÜVENLİK KODU</label>
+    <input type="number" name="securitycode" id="securitycode" placeholder="güvenlik kodu girin">
+</div>
+<br>
+<div>
+    <input type="submit" value="SAVE">
+    <input type="reset" value="RESET">
+    <br><br>
+</div>
+</div>
+    </form>
+</body>
+</html>
